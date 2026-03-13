@@ -163,6 +163,7 @@ execute_with_output() {
         echo "    $description..."
     fi
 
+    rm -f "$log_file"
     eval "$command" >> "$log_file" 2>&1
 }
 
