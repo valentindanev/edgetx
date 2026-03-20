@@ -150,7 +150,16 @@ class RTCBatInput(BaseModel):
     channel: str
 
 
-Input = Union[StickInput, FlexInput, SwitchInput, RawInput, VBatInput, RTCBatInput]
+class LuxInput(BaseModel):
+    name: Literal["LUX"]
+    type: Literal["LUX"]
+    adc: ADCNameType
+    gpio: Optional[str] = None
+    pin: Optional[str] = None
+    channel: Optional[Union[str, int]] = None
+
+
+Input = Union[StickInput, FlexInput, SwitchInput, RawInput, VBatInput, RTCBatInput, LuxInput]
 
 
 class ADCInputs(BaseModel):
