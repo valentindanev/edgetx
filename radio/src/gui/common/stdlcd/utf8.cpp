@@ -80,6 +80,8 @@ static const uint16_t _utf8_lut[] = { RU_LUT };
 static const uint16_t _utf8_lut[] = { UA_LUT };
 #define UTF8_SUBS_LUT
 static const uint16_t _utf8_substitution_lut[] = { UA_SUB_LUT };
+#elif defined(TRANSLATIONS_BG) && !defined(BOOT)
+static const uint16_t _utf8_lut[] = { RU_LUT };
 #elif defined(TRANSLATIONS_SE)
 static const uint16_t _utf8_lut[] = { SE_LUT};
 #else
@@ -103,6 +105,7 @@ static const uint16_t ru_utf8_lut[] = { RU_LUT, 0 };
 static const uint16_t ua_utf8_lut[] = { UA_LUT, 0 };
 static const uint16_t ua_utf8_substitution_lut[] = { UA_SUB_LUT, 0 };
 static const uint16_t se_utf8_lut[] = { SE_LUT, 0 };
+static const uint16_t bg_utf8_lut[] = { RU_LUT, 0 };
 
 struct LangUtf {
   const uint16_t* lut;
@@ -110,6 +113,7 @@ struct LangUtf {
 };
 
 static const LangUtf langUtf[] = {
+  { bg_utf8_lut, nullptr },
   { nullptr, nullptr },
   { cz_utf8_lut, cz_utf8_substitution_lut },
   { da_utf8_lut, nullptr },

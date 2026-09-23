@@ -1255,6 +1255,7 @@
 
 // Voice in native language
 #define TR_VOICE_ENGLISH                "Inglês"
+#define TR_VOICE_BULGARIAN              "Búlgaro"
 #define TR_VOICE_CHINESE                "Chinês"
 #define TR_VOICE_CZECH                  "Tcheco"
 #define TR_VOICE_DANISH                 "Dinamarquês"

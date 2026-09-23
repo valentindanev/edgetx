@@ -42,6 +42,7 @@ class OpenTxFirmware: public Firmware
     {
       //  Note: these align with the radio NOT computer locales - TODO harmonise with ISO and one list!!!
       addLanguage("en");
+      addLanguage("bg");
       addLanguage("cn");
       addLanguage("cz");
       addLanguage("da");

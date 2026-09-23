@@ -252,6 +252,7 @@ void GeneralSetupPanel::on_timezoneLE_textEdited(const QString &text)
 
 // Copied from tts.h
 enum RadioLanguage {
+  LANG_BG,
   LANG_CN,
   LANG_CZ,
   LANG_DA,
@@ -279,6 +280,7 @@ enum RadioLanguage {
 // Order must match RadioLanguage
 // Note: these align with the radio NOT computer locales - TODO harmonise with ISO and one list!!!
 static const char* langStrings[][2] = {
+  { "Bulgarian", "bg" },
   { "Chinese", "cn" },
   { "Czech", "cz" },
   { "Danish", "da" },
@@ -318,6 +320,7 @@ void GeneralSetupPanel::populateTextLangCB(QComboBox* b, const char* currLang, b
   // Available text languages
   // B&W
   static RadioLanguage bwLangs[] = {
+    LANG_BG,
     // LANG_CN,   // no fonts
     LANG_CZ,
     LANG_DA,
@@ -343,6 +346,7 @@ void GeneralSetupPanel::populateTextLangCB(QComboBox* b, const char* currLang, b
   };
   // Color
   static RadioLanguage colorLangs[] = {
+    LANG_BG,
     LANG_CN,
     LANG_CZ,
     LANG_DA,

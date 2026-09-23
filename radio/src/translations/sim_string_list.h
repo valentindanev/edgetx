@@ -1027,6 +1027,7 @@
 #define STR_VIEW_CHANNELS currentLangStrings->STR_VIEW_CHANNELS
 #define STR_VIEW_NOTES currentLangStrings->STR_VIEW_NOTES
 #define STR_VIEW_TEXT currentLangStrings->STR_VIEW_TEXT
+#define STR_VOICE_BULGARIAN currentLangStrings->STR_VOICE_BULGARIAN
 #define STR_VOICE_CHINESE currentLangStrings->STR_VOICE_CHINESE
 #define STR_VOICE_CZECH currentLangStrings->STR_VOICE_CZECH
 #define STR_VOICE_DANISH currentLangStrings->STR_VOICE_DANISH

@@ -54,6 +54,7 @@ struct LangStrings {
 #undef STR
 #undef STRARRAY
 
+extern const LangStrings bgLangStrings;
 extern const LangStrings cnLangStrings;
 extern const LangStrings czLangStrings;
 extern const LangStrings daLangStrings;

@@ -93,6 +93,9 @@ FONT_TABLE(ru)
 #elif defined(TRANSLATIONS_UA)
 FONT_TABLE(ua)
 #define ENABLE_FALLBACK
+#elif defined(TRANSLATIONS_BG)
+FONT_TABLE(ru)
+#define ENABLE_FALLBACK
 #else
 FONT_TABLE(en)
 #endif
@@ -220,6 +223,7 @@ FONT_TABLE(ua);
 
 // Must match RadioLanguage order
 etxLvglFont* etxFonts[] = {
+  ru_fontTable,   // BG
   cn_fontTable,   // CN
   en_fontTable,
   en_fontTable,

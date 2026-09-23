@@ -452,6 +452,9 @@
 #elif defined(TRANSLATIONS_RU)
   #define LV_FONT_CUSTOM_DECLARE LV_FONT_DECLARE(lv_font_ru_STD)
   #define LV_FONT_DEFAULT &lv_font_ru_STD
+#elif defined(TRANSLATIONS_BG)
+  #define LV_FONT_CUSTOM_DECLARE LV_FONT_DECLARE(lv_font_ru_STD)
+  #define LV_FONT_DEFAULT &lv_font_ru_STD
 #elif defined(TRANSLATIONS_JP)
   #define LV_FONT_CUSTOM_DECLARE LV_FONT_DECLARE(lv_font_jp_STD)
   #define LV_FONT_DEFAULT &lv_font_jp_STD

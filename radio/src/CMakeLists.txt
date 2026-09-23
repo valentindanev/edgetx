@@ -2,8 +2,8 @@ include(CMakeForceCompiler)
 include(Bitmaps)
 
 set(PCB_TYPES X9LITE X9LITES X7 XLITE XLITES X9D X9D+ X9E X10 X12S PL18 T15PRO ST16 PA01 TX15 GX15 TX16SMK3 T22 V12 H17)
-set(RADIO_LANGUAGES CN CZ DA DE EN ES FI FR HE HU IT JP KO NL PL PT RU SE SK TW UA)
-set(TTS_LANGUAGES CN CZ DA DE EN ES FI FR HE HU IT JP KO NL PL PT RU SE SK TW UA)
+set(RADIO_LANGUAGES BG CN CZ DA DE EN ES FI FR HE HU IT JP KO NL PL PT RU SE SK TW UA)
+set(TTS_LANGUAGES BG CN CZ DA DE EN ES FI FR HE HU IT JP KO NL PL PT RU SE SK TW UA)
 
 set(PCB "X9D+" CACHE STRING "Radio type, one of: ${PCB_TYPES}")
 set_property(CACHE PCB PROPERTY STRINGS ${PCB_TYPES})
@@ -532,6 +532,7 @@ if(ALL_LANGUAGES)
   add_definitions(-DALL_LANGS)
   set(SRC
     ${SRC}
+    translations/sim/lang_bg.cpp
     translations/sim/lang_cn.cpp
     translations/sim/lang_cz.cpp
     translations/sim/lang_da.cpp

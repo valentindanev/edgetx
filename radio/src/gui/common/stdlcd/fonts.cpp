@@ -93,6 +93,8 @@ const uint8_t font_5x7[] = {
 #include "font_se_05x07.lbm"
 #elif defined(TRANSLATIONS_UA) && !defined(BOOT)
 #include "font_ua_05x07.lbm"
+#elif defined(TRANSLATIONS_BG) && !defined(BOOT)
+#include "font_ru_05x07.lbm"
 #endif
 };
 
@@ -125,6 +127,8 @@ const uint8_t font_10x14[] = {
 #include "font_se_10x14.lbm"
 #elif defined(TRANSLATIONS_UA)
 #include "font_ua_10x14.lbm"
+#elif defined(TRANSLATIONS_BG)
+#include "font_ru_10x14.lbm"
 #endif
 };
 
@@ -155,6 +159,8 @@ const uint8_t font_4x6[] = {
 #include "font_se_04x06.lbm"
 #elif defined(TRANSLATIONS_UA)
 #include "font_ua_04x06.lbm"
+#elif defined(TRANSLATIONS_BG)
+#include "font_ru_04x06.lbm"
 #endif
 };
 
@@ -184,6 +190,8 @@ const uint8_t font_8x10[] = {
 #include "font_se_08x10.lbm"
 #elif defined(TRANSLATIONS_UA)
 #include "font_ua_08x10.lbm"
+#elif defined(TRANSLATIONS_BG)
+#include "font_ru_08x10.lbm"
 #endif
 };
 
@@ -448,6 +456,7 @@ const uint8_t ua_font_10x14[] = {
 };
 
 const uint8_t* const font4x6table[] = {
+  ru_font_4x6,
   en_font_4x6,
   cz_font_4x6,
   da_font_4x6,
@@ -472,6 +481,7 @@ const uint8_t* const font4x6table[] = {
 };
 
 const uint8_t* const font5x7table[] = {
+  ru_font_5x7,
   en_font_5x7,
   cz_font_5x7,
   da_font_5x7,
@@ -496,6 +506,7 @@ const uint8_t* const font5x7table[] = {
 };
 
 const uint8_t* const font8x10table[] = {
+  ru_font_8x10,
   en_font_8x10,
   cz_font_8x10,
   da_font_8x10,
@@ -520,6 +531,7 @@ const uint8_t* const font8x10table[] = {
 };
 
 const uint8_t* const font10x14table[] = {
+  ru_font_10x14,
   en_font_10x14,
   cz_font_10x14,
   da_font_10x14,
